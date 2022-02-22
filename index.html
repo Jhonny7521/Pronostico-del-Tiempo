@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <h1>DojoWeather</h1>
+            <nav>
+                <ul class="links">
+                    <li>
+                        <a href="#" onclick="alertMessage(this)">Burbank</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="alertMessage(this)">Chicago</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="alertMessage(this)">Dallas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="sanjose">
+            <h2>San José</h2>
+            <form>
+                <label> Show temperature in</label>
+                <select name="escalaTemperatura" onchange="Convert(this)">
+                    <option>C</option>
+                    <option>F</option>                   
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <div class="dia">
+                <h2>Hoy</h2>
+                <img src="./img/some_rain.png" alt="" class="imgWeather">
+                <p class="estDia">Algo lluvioso</p>
+                <p class="temperaturas"> 
+                    <span class="tempMax">24</span>
+                    <span class="tempMin">18</span>
+                </p>
+            </div>
+            <div class="dia">
+                <h2>Mañana</h2>
+                <img src="./img/some_sun.png" alt="" class="imgWeather">
+                <p class="estDia">Algo soleado</p>
+                <p class="temperaturas"> 
+                    <span class="tempMax">27</span>
+                    <span class="tempMin">19</span>
+                </p>
+            </div>
+            <div class="dia">
+                <h2>Viernes</h2>
+                <img src="./img/some_clouds.png" alt="" class="imgWeather">
+                <p class="estDia">Algo nublado</p>
+                <p class="temperaturas"> 
+                    <span class="tempMax">21</span>
+                    <span class="tempMin">16</span>
+                </p>
+            </div>
+            <div class="dia">
+                <h2>Sábado</h2>
+                <img src="./img/some_sun.png" alt="" class="imgWeather">
+                <p class="estDia">Algo soleado</p>
+                <p class="temperaturas"> 
+                    <span class="tempMax">26</span>
+                    <span class="tempMin">21</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="cookie">
+            <img src="./img/cookie.png" alt="cookie">
+            <div class="text">
+                <h3>Stop! Cookie time</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dignissimos molestiae ea, facilis explicabo nihil et consequuntur iure tenetur ducimus alias.</p>
+            </div>
+            <button onclick="hide(this)">Yo Acepto</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

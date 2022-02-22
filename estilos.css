@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+header{
+    background-color: skyblue;
+
+}
+
+.divHeader{
+    width: 550px;
+    margin: 0px auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div h1{
+    /* margin: 0px 2px; */
+    color: white;
+}
+
+.links{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*      container       */
+
+.container{
+    width: 550px;
+    margin: 0px auto;
+}
+
+.sanjose{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.row {
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dia{
+    background-color: lavender;
+    width: 125px;
+    height: 220px;
+    margin: 15px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap;
+    align-content: space-between; */
+}
+
+.dia h2{
+    margin: 15px;
+}
+
+.estDia {
+    margin: 15px 0px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgWeather{
+    width: 80px;
+    border-radius: 50%
+}
+
+.temperaturas {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tempMax{
+    color: red;
+}
+
+.tempMin{
+    color: blue;
+}
+
+/*      footer      */
+
+footer{
+    background-color: lavender;
+    width: 550px;
+    height: 90px;
+    margin: 0px 406px;
+    border: 2px solid black;
+    position: fixed;
+    bottom: 0;
+}
+
+.cookie{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cookie button{
+    width: 70px;
+    margin: 15px;
+    background-color: skyblue;
+    box-shadow: 2px 2px black;
+}
+
+/* .cookie button:active{
+    border: 2px solid grey;
+} */
+
+.text {
+    width: 350px;
+}
