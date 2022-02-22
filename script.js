@@ -14,21 +14,21 @@ function hide(obj){
 function Convert(obj){
     let tipoTemp = obj.value;
     let tempMax;
+    let tempMin;
 
     if (tipoTemp == "C"){
         tempMin = document.getElementsByClassName('tempMin');
         tempMax = document.getElementsByClassName('tempMax');
+
         for(let i=0; i<tempMax.length ; i++){
             let valorTemp = parseInt(tempMax[i].innerHTML);
-            let resultado;
-            resultado = (valorTemp -32 ) * (5/9);
+            let resultado = (valorTemp -32 ) * (5/9);            
             tempMax[i].innerHTML = resultado.toFixed(0);
         }   
 
         for(let i=0; i<tempMin.length ; i++){
             let valorTemp = parseInt(tempMin[i].innerHTML);
-            let resultado;
-            resultado = (valorTemp -32 ) * (5/9);
+            let resultado = (valorTemp -32 ) * (5/9);            
             tempMin[i].innerHTML = resultado.toFixed(0);
         }
     }
